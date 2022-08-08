@@ -1,0 +1,32 @@
+header{
+    @include flex(null, space-around, center);
+    padding: $spacing-xsmall;
+    }
+
+    .header__img{
+        align-items: center;
+        width: 150px;
+    }
+
+    .nav-item{
+        font-family: $font-principal;
+        font-size: map-get($fuentes,text-xsmall);
+
+        .nav-link--active{
+            @extend .nav-item;
+            color:$secundary;
+            @include flex(null, space-around, center);
+            padding: 8px 12px;
+
+        }
+
+        &.nav-link{
+            color: $primary;
+
+            &:hover{
+                color:$secundary;
+            }
+        }
+    }
+
+

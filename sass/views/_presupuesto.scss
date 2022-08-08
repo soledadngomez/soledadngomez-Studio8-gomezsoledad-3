@@ -1,0 +1,73 @@
+.letras__presupuesto{
+    width:fit-content;
+    height: auto;
+    margin:0px;
+    margin-left: 30px;
+
+    img{
+        width: 180px;
+    }
+}
+
+.form-register {
+    width: 500px;
+    height: 500px;
+    background: $primary;
+    padding: 30px;
+    margin: auto;
+    margin-bottom: 25px;
+    border-radius: 4px;
+    font-family: $font-principal;
+    color: $alternative;
+    box-shadow: 7px 13px 37px $secundary;
+
+    h4 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        height: 40px;
+        text-align: center;
+        font-size: $xsmall;
+        line-height: 40px;
+    }
+
+    a {
+        color:$alternative;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        color: $alternative;
+        text-decoration: underline;
+    }
+    
+
+    .controls {
+        width: 100%;
+        padding: 10px;
+        border-radius: 4px;
+        margin-bottom: 16px;
+        border: 1px solid rgb(131, 131, 131);
+        font-family: $font-principal;
+        font-size: $xsmall;
+        color: $primary;
+    }
+
+    .botons{
+        width: 100%;
+        background: $alternative;
+        border: none;
+        padding: 12px;
+        color: $primary;
+        margin: 16px 0;
+        font-size: $xsmall;
+
+        &:active{
+            background: $secundary;
+        }
+    }
+}
+
+

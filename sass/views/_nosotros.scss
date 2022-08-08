@@ -1,0 +1,73 @@
+.box__nosotros{
+    width: auto;
+    height: fit-content;
+    display: grid;
+    grid-template-areas: 
+    "info   img"
+    "info   img"
+    "equipo equipo";
+    
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-area: auto;
+
+    .nosotros__info{
+        height: auto;
+        padding: 20px;
+        margin-left: 10px;
+        background-color: $primary;
+        grid-column: 1 / 7;
+        font-size: $xsmall;
+    }
+
+    .sobre__nosotros{
+        grid-column: 7 / 13;
+        grid-row: 1 / 3;
+    }
+    
+    .nosotros__img{
+        position: inherit;
+        width: 100%;
+        height: 608px;
+        z-index: -1;
+    }
+    
+    .letras__nosotros{
+        position: absolute;
+        width: 250px;
+        z-index: 1;
+    }
+    
+    .video__sobreNosotros{
+        width:450px;
+        height: 282px;
+    }
+
+    .carta__equipo{
+        grid-column: 1 / 13;
+        grid-row: 2 / 3;
+        width: fit-content;
+        height: fit-content;
+    
+    h3{
+        @include flex(null, center, center);
+            align-content: center;
+            margin: 20px;
+            border: 2px;
+            border-style: solid;
+            border-color: $primary;
+            font-size: $small;
+    }
+
+    p{
+        @include flex(null, center, center);
+            margin-top: 15px;
+    }
+    }
+}
+
+
+
+
+
+

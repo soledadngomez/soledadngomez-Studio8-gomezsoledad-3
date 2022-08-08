@@ -1,0 +1,31 @@
+#gradiente{
+    background-image: linear-gradient($alternative, $primary);
+}
+
+#contacto{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .boton__contacto{
+        width: 150px;
+        height: 70px;
+        margin: 10px ;
+        margin-left: 10px;
+        margin-bottom: 200px;
+    }
+
+    .animacion__cam{
+            font-size:$medium;
+            margin: 40px;
+            padding: 0%;
+
+            &:hover{
+                transform: scale(2,2);
+                opacity: 90%;
+            }
+        }
+    }
+
+

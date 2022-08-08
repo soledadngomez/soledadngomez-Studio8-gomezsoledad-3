@@ -1,0 +1,70 @@
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $primary;
+    bottom: 0;
+    width: 100%;
+
+    .grupo_1{
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+        padding: $spacing-small 0px;
+
+        h2{
+            color: $alternative;
+            margin-bottom: $spacing-small;
+            font-size: $xsmall;
+        }
+    
+        p{
+            color: $alternative;
+            margin-bottom: $spacing-medium;
+        }
+
+    }
+
+    .pie_caja figure{
+        width: 100%;
+        height: 100%;
+        @include flex(null, center, center);
+    }
+
+    img{
+        width: 200px;
+        
+    }
+
+    .red_social a{
+        display: flex;
+        flex-wrap: wrap;
+        text-decoration: none;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        color: $alternative;
+        margin-right: $spacing-small;
+        background-color: $primary;
+        text-align: center;
+        transition: all 300ms ease;
+
+        a:hover{
+            color: $secundary;
+            
+        }
+
+    }
+
+    .grupo_2{
+        background-color: $alternative;
+        width: 100%;
+        padding: $spacing-xsmall;
+        text-align: center;
+        color: $primary;
+
+    }
+
+}

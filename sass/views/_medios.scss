@@ -1,0 +1,297 @@
+/* Medias */
+
+@media screen and (max-width:1200px){
+}
+
+@media screen and (max-width:960px){
+    header {
+		flex-direction: column;
+	}
+
+	.menu {
+		flex-direction: column;
+	}
+
+    .box__nosotros{
+        .video__sobreNosotros{
+            width:410px;
+            height: 350px;
+        }
+    }
+
+    .galeria{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        gap: 5px;
+        margin: 15px;
+    }
+    
+    .galeria__grilla:nth-of-type(1){
+        grid-column: 1 / 2 ;
+    }
+    
+    .galeria__grilla:nth-of-type(2){
+        grid-column: 2 / 3;
+    }
+    
+    .galeria__grilla:nth-of-type(3){
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    
+    .galeria__grilla:nth-of-type(4){
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+    
+    .galeria__grilla:nth-of-type(5){
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;        
+    }
+    
+    .galeria__grilla:nth-of-type(6){
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
+    
+    .galeria__grilla:nth-of-type(7){
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+    
+    .galeria__grilla:nth-of-type(8){
+        grid-column: 2 / 3;
+        grid-row: 4 / 5;
+    }
+    
+    .galeria__grilla:nth-of-type(9){
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+    }
+    
+    .galeria__grilla:hover{
+        opacity: 50%;
+    }
+
+}
+
+
+@media screen and (max-width:480px){
+    body{
+        width: 100%;
+    }
+
+    header {
+		flex-direction: column;
+	}
+
+	.menu {
+		flex-direction: column;
+	}
+
+    main{
+        width: 100%;
+        
+        .carta__equipo{
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+            margin-bottom: 10px;
+
+            .boton__equipo{
+                width: 30%;
+            }
+
+            &__img{
+                img{
+                    width: 60%;
+                    margin-top: 15px;
+                    margin-bottom: 5px;
+                    justify-content: center;
+                    align-items: center;
+                    margin-left: 90px;
+                }
+                }
+            h3{
+                font-size: $xsmall;
+                width: max-content;
+                padding: 5px;
+                margin-left: 186px;
+            }
+            p{
+                font-size: $xsmall;
+            }
+            }
+        } 
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin: 10px 10px;
+
+        .pie-pagina {
+            flex-direction: column;
+        }
+    
+        .caja {
+            @include flex(null, flex-end, flex-start);
+            background-size:cover;
+            height: 350px;
+        }
+    
+        .pie-pagina .grupo_1 {
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            margin: 10px;
+            .pie_caja{
+                margin: 10px;
+            }
+        }
+    
+        .pie-pagina .grupo_2 {
+            width: 480px;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+
+    .box__nosotros{
+        width: 480px;
+        height: auto;
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .sobre__nosotros{
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+
+        .nosotros__info{
+            max-width: 90%;
+            margin-left: 0;
+            padding: 20px;
+
+            .video__sobreNosotros{
+                width: 100%;
+            }
+        }
+
+        
+        .carta__equipo{
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+            margin-bottom: 10px;
+
+            .boton__equipo{
+                width: 30%;
+            }
+
+            &__img{
+                img{
+                    width: 60%;
+                    margin-top: 15px;
+                    margin-bottom: 5px;
+                    justify-content: center;
+                    align-items: center;
+                    margin-left: 80px;
+                }
+                }
+            h3{
+                font-size: $xsmall;
+                width: max-content;
+                padding: 5px;
+                margin-left: 137px;
+            }
+            p{
+                font-size: $xsmall;
+                margin-left: 20px;
+            }
+            }
+    }
+
+
+
+    .galeria{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+        gap: 2px;
+        margin: 10px;
+
+        &__grilla:nth-of-type(1){
+            grid-column: 1 / 2 ;
+        }
+        
+        &__grilla:nth-of-type(2){
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+        }
+        
+        &__grilla:nth-of-type(3){
+            grid-column: 1 / 2;
+            grid-row: 3 / 4;
+        }
+        
+        &__grilla:nth-of-type(4){
+            grid-column: 1 / 2;
+            grid-row: 4 / 5;
+        }
+        
+        &__grilla:nth-of-type(5){
+            grid-column: 1 / 2;
+            grid-row: 5 / 6;        
+        }
+        
+        &__grilla:nth-of-type(6){
+            grid-column: 1 / 2;
+            grid-row: 6 / 7;
+        }
+        
+        &__grilla:nth-of-type(7){
+            grid-column: 1 / 2;
+            grid-row: 7 / 8;
+        }
+        
+        &__grilla:nth-of-type(8){
+            grid-column: 1 / 2;
+            grid-row: 8 / 9;
+        }
+        
+        &__grilla:nth-of-type(9){
+            grid-column: 1 / 2;
+            grid-row: 9 / 10;
+        }
+        
+        &__grilla:hover{
+            opacity: 50%;
+        }
+    }
+
+    .form-register {
+        width: 400px;
+        height: 500px;
+        font-size: $xsmall;
+}
+
+#contacto{
+    width: 480px;
+    margin-top: 5px;
+    .boton__contacto{
+        margin-bottom: 10px;
+    }
+    .map{
+        width: 480px;
+        margin-top: 5px;
+    }
+
+    }
+
+}
